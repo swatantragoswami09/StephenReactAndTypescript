@@ -25,18 +25,18 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
 
     monacoEditor.getModel()?.updateOptions({ tabSize: 2 });
 
-    // const highlighter = new Highlighter(
-    //   //   @ts-ignore
-    //   window.monaco,
-    //   codeShift,
-    //   monacoEditor
-    // );
-    // highlighter.highLightOnDidChangeModelContent(
-    //   () => {},
-    //   () => {},
-    //   undefined,
-    //   () => {}
-    // );
+    const highlighter = new Highlighter(
+      //   @ts-ignore
+      window.monaco,
+      codeShift,
+      monacoEditor
+    );
+    highlighter.highLightOnDidChangeModelContent(
+      () => {},
+      () => {},
+      undefined,
+      () => {}
+    );
   };
 
   const onFormatClick = () => {
@@ -79,7 +79,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
           showUnused: false,
           folding: false,
           lineNumbersMinChars: 3,
-          fontSize: 16,
+          fontSize: 20,
           scrollBeyondLastLine: false,
           automaticLayout: true,
         }}

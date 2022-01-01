@@ -1,11 +1,14 @@
 import { useState } from "react";
 import ReactDOM from "react-dom";
 import CodeCell from "./components/code-cell";
+import TextEditor from "./components/text-editor";
+import "bulmaswatch/cyborg/bulmaswatch.min.css";
 
 const App = () => {
   return (
     <div>
-      <CodeCell />
+      <TextEditor />
+      {/* <CodeCell /> */}
       {/* <CodeCell /> */}
     </div>
   );
