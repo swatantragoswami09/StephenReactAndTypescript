@@ -1,48 +1,15 @@
-npx create-react-app project_name --template typescript 
-npm install --save-exact esbuild-wasm@0.8.27
-npm install axios
-npm install localforage
-npm install --save-exact @monaco-editor/react@3.7.5
-npm install --save-exact monaco-editor
-npm install prettier @types/prettier
-npm install bulmaswatch
-npm install --save-exact react-resizable@1.11.0 @types/react-resizable@1.7.2
-npm install --save-exact monaco-jsx-highlighter@0.0.15 jscodeshift@0.11.0 @types/jscodeshift@0.7.2
-npm view react dist.tarball--->https://registry.npmjs.org/react/-/react-17.0.2.tgz
-
-npm install --save-exact @uiw/react-md-editor@2.1.1
-npm install --save-exact @types/react-redux@7.1.15 react-redux@7.2.2 redux@4.0.5 redux-thunk@2.3.0 axios@0.21.1
-npm install immer
-npm install @fortawesome/fontawesome-free
-import * as esbuild from 'esbuild-wasm';
- 
-export const unpkgPathPlugin = () => {
-  return {
-    name: 'unpkg-path-plugin',
-    setup(build: esbuild.PluginBuild) {
-      build.onResolve({ filter: /.*/ }, async (args: any) => {
-        console.log('onResole', args);
-        return { path: args.path, namespace: 'a' };
-      });
- 
-      build.onLoad({ filter: /.*/ }, async (args: any) => {
-        console.log('onLoad', args);
- 
-        if (args.path === 'index.js') {
-          return {
-            loader: 'jsx',
-            contents: `
-              import message from './message';
-              console.log(message);
-            `,
-          };
-        } else {
-          return {
-            loader: 'jsx',
-            contents: 'export default "hi there!"',
-          };
-        }
-      });
-    },
-  };
-};
+When using lerna, we do not manually NPM install modules!
+Instead, we use the command
+lerna add
+------------------------
+lerna add commander --scope=cli
+lerna add local-api --scope=cli
+lerna add typescript --dev --scope=local-api
+npx typescript --init
+lerna add typescript --dev --scope=cli
+lerna add @types/node --dev --scope=cli
+lerna add express --scope=local-api
+lerna add @types/express --dev --scope=local-api
+lerna add cors --scope=local-api
+lerna add @types/cors --dev --scope=local-api
+lerna add http-proxy-middleware --scope=local-api
