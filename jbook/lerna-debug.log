@@ -1,0 +1,132 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.22.1',
+0 silly argv   '$0': 'C:\\Users\\swatantragoswami\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v3.22.1
+2 verbose rootPath D:\Stephen React course\StephenReactAndTypescript\jbook
+3 verbose session 68c63d2e9ae2b4b8
+4 verbose user-agent lerna/3.22.1/node@v14.16.0+x64 (win32)
+5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '3.22.1' }
+6 verbose rootPath D:\Stephen React course\StephenReactAndTypescript\jbook
+7 info current version 0.0.0
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly currentBranch
+11 verbose currentBranch master
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+15 silly hasTags
+16 verbose hasTags false
+17 info Assuming all packages changed
+18 verbose updated jsnote-skg
+19 verbose updated @jsnote-skg/local-api
+20 verbose updated @jsnote-skg/local-client
+21 verbose git-describe undefined => "30b37d9"
+22 silly git-describe parsed => {"refCount":"12","sha":"30b37d9","isDirty":false}
+23 info execute Skipping releases
+24 silly lifecycle No script for "preversion" in "root", continuing
+25 silly lifecycle No script for "preversion" in "@jsnote-skg/local-client", continuing
+26 silly lifecycle No script for "version" in "@jsnote-skg/local-client", continuing
+27 silly lifecycle No script for "preversion" in "@jsnote-skg/local-api", continuing
+28 silly lifecycle No script for "version" in "@jsnote-skg/local-api", continuing
+29 silly lifecycle No script for "preversion" in "jsnote-skg", continuing
+30 silly lifecycle No script for "version" in "jsnote-skg", continuing
+31 silly lifecycle No script for "version" in "root", continuing
+32 silly gitAdd [
+32 silly gitAdd   'packages/local-client/package.json',
+32 silly gitAdd   'packages/local-client/package-lock.json',
+32 silly gitAdd   'packages/local-api/package.json',
+32 silly gitAdd   'packages/local-api/package-lock.json',
+32 silly gitAdd   'packages/cli/package.json',
+32 silly gitAdd   'packages/cli/package-lock.json',
+32 silly gitAdd   'lerna.json'
+32 silly gitAdd ]
+33 silly gitCommit v1.0.0
+34 verbose git [ 'commit', '-m', 'v1.0.0' ]
+35 silly gitTag v1.0.0
+36 verbose git [ 'tag', 'v1.0.0', '-m', 'v1.0.0' ]
+37 silly lifecycle No script for "postversion" in "jsnote-skg", continuing
+38 silly lifecycle No script for "postversion" in "@jsnote-skg/local-api", continuing
+39 silly lifecycle No script for "postversion" in "@jsnote-skg/local-client", continuing
+40 silly lifecycle No script for "postversion" in "root", continuing
+41 info git Pushing tags...
+42 silly gitPush origin master
+43 info publish Publishing packages to npm...
+44 info Verifying npm credentials
+45 verbose Retrieving npm user profile
+46 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 912ms
+47 silly npm profile get received {"tfa":false,"name":"swatantra15","email":"swatantragoswami09@gmail.com","email_verified":true,"created":"2021-09-02T04:36:44.773Z","updated":"2021-09-02T04:36:44.766Z","cidr_whitelist":null}
+48 silly get npm username received {"username":"swatantra15","tfa":false,"name":"swatantra15","email":"swatantragoswami09@gmail.com","email_verified":true,"created":"2021-09-02T04:36:44.773Z","updated":"2021-09-02T04:36:44.766Z","cidr_whitelist":null}
+49 silly verifyNpmPackageAccess
+50 http fetch GET 200 https://registry.npmjs.org/-/org/swatantra15/package?format=cli 740ms
+51 info Checking two-factor auth mode
+52 verbose Retrieving npm user profile
+53 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 453ms
+54 silly npm profile get received {"tfa":false,"name":"swatantra15","email":"swatantragoswami09@gmail.com","email_verified":true,"created":"2021-09-02T04:36:44.773Z","updated":"2021-09-02T04:36:44.766Z","cidr_whitelist":null}
+55 silly 2FA false
+56 warn ENOLICENSE Packages jsnote-skg, @jsnote-skg/local-api, and @jsnote-skg/local-client are missing a license.
+56 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+56 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+57 silly getCurrentSHA
+58 verbose getCurrentSHA 5efbbcf6a85a99ce531e703cc1f1c8f3b509a1bb
+59 silly lifecycle No script for "prepublish" in "root", continuing
+60 silly lifecycle No script for "prepare" in "root", continuing
+61 silly lifecycle No script for "prepublishOnly" in "root", continuing
+62 silly lifecycle No script for "prepack" in "root", continuing
+63 verbose pack-directory packages\local-client
+64 silly lifecycle No script for "prepublish" in "@jsnote-skg/local-client", continuing
+65 silly lifecycle No script for "prepare" in "@jsnote-skg/local-client", continuing
+66 silly lifecycle "prepublishOnly" starting in "@jsnote-skg/local-client"
+67 info lifecycle @jsnote-skg/local-client@1.0.0~prepublishOnly: @jsnote-skg/local-client@1.0.0
+68 verbose lifecycle @jsnote-skg/local-client@1.0.0~prepublishOnly: unsafe-perm in lifecycle true
+69 verbose lifecycle @jsnote-skg/local-client@1.0.0~prepublishOnly: PATH: C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\npm-lifecycle\node-gyp-bin;D:\Stephen React course\StephenReactAndTypescript\jbook\packages\local-client\node_modules\.bin;C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Maven\bin\;C:\Program Files (x86)\dotnet\;C:\Users\swatantragoswami\AppData\Local\Android\Sdk;C:\Program Files\Java\jdk1.8.0_202;C:\Users\swatantragoswami\AppData\Local\Microsoft\WindowsApps;C:\Users\swatantragoswami\.dotnet\tools;C:\Users\swatantragoswami\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\Users\swatantragoswami\AppData\Local\Programs\Microsoft VS Code\bin
+70 verbose lifecycle @jsnote-skg/local-client@1.0.0~prepublishOnly: CWD: D:\Stephen React course\StephenReactAndTypescript\jbook\packages\local-client
+71 silly lifecycle @jsnote-skg/local-client@1.0.0~prepublishOnly: Args: [ '/d /s /c', 'npm run build' ]
+72 silly lifecycle @jsnote-skg/local-client@1.0.0~prepublishOnly: Returned: code: 0  signal: null
+73 silly lifecycle "prepublishOnly" finished in "@jsnote-skg/local-client"
+74 silly lifecycle No script for "prepack" in "@jsnote-skg/local-client", continuing
+75 silly lifecycle No script for "postpack" in "@jsnote-skg/local-client", continuing
+76 verbose packed packages\local-client
+77 verbose pack-directory packages\cli
+78 verbose pack-directory packages\local-api
+79 silly lifecycle No script for "prepublish" in "jsnote-skg", continuing
+80 silly lifecycle No script for "prepublish" in "@jsnote-skg/local-api", continuing
+81 silly lifecycle No script for "prepare" in "jsnote-skg", continuing
+82 silly lifecycle No script for "prepare" in "@jsnote-skg/local-api", continuing
+83 silly lifecycle "prepublishOnly" starting in "@jsnote-skg/local-api"
+84 info lifecycle @jsnote-skg/local-api@1.0.0~prepublishOnly: @jsnote-skg/local-api@1.0.0
+85 silly lifecycle "prepublishOnly" starting in "jsnote-skg"
+86 info lifecycle jsnote-skg@1.0.0~prepublishOnly: jsnote-skg@1.0.0
+87 verbose lifecycle @jsnote-skg/local-api@1.0.0~prepublishOnly: unsafe-perm in lifecycle true
+88 verbose lifecycle @jsnote-skg/local-api@1.0.0~prepublishOnly: PATH: C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\npm-lifecycle\node-gyp-bin;D:\Stephen React course\StephenReactAndTypescript\jbook\packages\local-api\node_modules\.bin;C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Maven\bin\;C:\Program Files (x86)\dotnet\;C:\Users\swatantragoswami\AppData\Local\Android\Sdk;C:\Program Files\Java\jdk1.8.0_202;C:\Users\swatantragoswami\AppData\Local\Microsoft\WindowsApps;C:\Users\swatantragoswami\.dotnet\tools;C:\Users\swatantragoswami\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\Users\swatantragoswami\AppData\Local\Programs\Microsoft VS Code\bin
+89 verbose lifecycle @jsnote-skg/local-api@1.0.0~prepublishOnly: CWD: D:\Stephen React course\StephenReactAndTypescript\jbook\packages\local-api
+90 silly lifecycle @jsnote-skg/local-api@1.0.0~prepublishOnly: Args: [ '/d /s /c', 'tsc' ]
+91 silly lifecycle @jsnote-skg/local-api@1.0.0~prepublishOnly: Returned: code: 0  signal: null
+92 verbose lifecycle jsnote-skg@1.0.0~prepublishOnly: unsafe-perm in lifecycle true
+93 verbose lifecycle jsnote-skg@1.0.0~prepublishOnly: PATH: C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\npm-lifecycle\node-gyp-bin;D:\Stephen React course\StephenReactAndTypescript\jbook\packages\cli\node_modules\.bin;C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Maven\bin\;C:\Program Files (x86)\dotnet\;C:\Users\swatantragoswami\AppData\Local\Android\Sdk;C:\Program Files\Java\jdk1.8.0_202;C:\Users\swatantragoswami\AppData\Local\Microsoft\WindowsApps;C:\Users\swatantragoswami\.dotnet\tools;C:\Users\swatantragoswami\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\Users\swatantragoswami\AppData\Local\Programs\Microsoft VS Code\bin
+94 verbose lifecycle jsnote-skg@1.0.0~prepublishOnly: CWD: D:\Stephen React course\StephenReactAndTypescript\jbook\packages\cli
+95 silly lifecycle jsnote-skg@1.0.0~prepublishOnly: Args: [
+95 silly lifecycle   '/d /s /c',
+95 silly lifecycle   'esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\"production\\"'
+95 silly lifecycle ]
+96 silly lifecycle "prepublishOnly" finished in "@jsnote-skg/local-api"
+97 silly lifecycle No script for "prepack" in "@jsnote-skg/local-api", continuing
+98 silly lifecycle No script for "postpack" in "@jsnote-skg/local-api", continuing
+99 verbose packed packages\local-api
+100 silly lifecycle jsnote-skg@1.0.0~prepublishOnly: Returned: code: 0  signal: null
+101 silly lifecycle "prepublishOnly" finished in "jsnote-skg"
+102 silly lifecycle No script for "prepack" in "jsnote-skg", continuing
+103 error ZlibError: zlib: invalid stored block lengths
+103 error     at Unzip.write (C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\minizlib\index.js:147:22)
+103 error     at Object.write (C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\tar\lib\parse.js:305:58)
+103 error     at Yallist.<anonymous> (C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:374:18)
+103 error     at Yallist.forEach (C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\yallist\yallist.js:156:8)
+103 error     at ReadStream.emit (C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:373:20)
+103 error     at ReadStream.emit (C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:154:22)
+103 error     at ReadStream.write (C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:163:17)
+103 error     at ReadStream.[_handleChunk] (C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:131:19)
+103 error     at ReadStream.[_onread] (C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:109:32)
+103 error     at C:\Users\swatantragoswami\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:101:22
